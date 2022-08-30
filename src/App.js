@@ -1,6 +1,8 @@
 import React from "react";
 import { Box } from "@mui/material";
-import Slider from "./components/slider";
+import Slider from "./components/rangeslider";
+import NonLinearSlider from "./components/nonLinearSlider";
+import RangeSlider from "./components/rangeslider";
 
 function App() {
   return (
@@ -8,7 +10,7 @@ function App() {
       sx={{
         height: "100vh",
         width: "100vw",
-        backgroundColor: "red",
+        backgroundColor: "#DBEBF7",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -18,7 +20,7 @@ function App() {
         sx={{
           height: "80vh",
           width: "30vw",
-          backgroundColor: "yellow",
+          backgroundColor: "white",
           borderRadius: "5px",
           border: "1px solid black",
         }}
@@ -27,11 +29,13 @@ function App() {
           sx={{
             height: "50vh",
             width: "calc(30vw - 40px)",
-            backgroundColor: "cyan",
+            backgroundColor: "#F7F5F7",
             borderRadius: "5px 5px 0px 0px",
-            padding:"20px"
+            padding: "20px",
           }}
-        > <Slider /></Box>
+        >
+          <RangeSlider title="Length" />
+        </Box>
         <Box
           sx={{
             height: "30vh",
@@ -40,7 +44,6 @@ function App() {
             borderRadius: " 0px 0px 5px 5px",
           }}
         ></Box>
-       
       </Box>
     </Box>
   );
