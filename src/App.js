@@ -1,6 +1,8 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Slider from "./components/slider";
+import RadioStyle from "./components/radio";
+import Generate from "./components/generetorsec";
 
 function App() {
   return (
@@ -8,7 +10,7 @@ function App() {
       sx={{
         height: "100vh",
         width: "100vw",
-        backgroundColor: "red",
+        backgroundColor: "#dbebf7",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -18,9 +20,10 @@ function App() {
         sx={{
           height: "80vh",
           width: "30vw",
-          backgroundColor: "yellow",
+          backgroundColor: "white",
           borderRadius: "5px",
-          border: "1px solid black",
+          border: "1px solid gray",
+          boxShadow:"5px 10px 20px #8888"
         }}
       >
         <Box
@@ -31,15 +34,18 @@ function App() {
             borderRadius: "5px 5px 0px 0px",
             padding:"20px"
           }}
-        > <Slider /></Box>
+        > <RadioStyle/>
+        <Slider /></Box>
         <Box
           sx={{
-            height: "30vh",
-            width: "30vw",
-            backgroundColor: "pink",
+            height: "calc(40vh - 100px)",
+            width: "calc(30vw - 40px)",
+            // backgroundColor: "pink",
             borderRadius: " 0px 0px 5px 5px",
+            padding:"40px 20px 20px 20px"
+
           }}
-        ></Box>
+        ><Generate/></Box>
        
       </Box>
     </Box>
