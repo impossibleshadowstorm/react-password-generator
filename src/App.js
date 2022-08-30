@@ -26,7 +26,7 @@ function App() {
         <Box
           sx={{
             height: "50vh",
-            width: "30vw",
+            width: "calc(30vw - 40px)",
             backgroundColor: "cyan",
             borderRadius: "5px 5px 0px 0px",
             padding:"20px"
