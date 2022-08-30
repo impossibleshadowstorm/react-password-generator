@@ -5,8 +5,6 @@ import {
   Typography,
   FormControl,
   Input,
-  InputAdornment,
-  FormHelperText,
 } from "@mui/material";
 
 const RangeSlider = (props) => {
