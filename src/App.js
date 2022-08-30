@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Box } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      hleo
-    </div>
+    <Box sx={{ height: "100vh", width: "100vw", backgroundColor: "red" }}>
+      <Box
+        sx={{ height: "80vh", width: "40vw", backgroundColor: "yellow" }}
+      ></Box>
+    </Box>
   );
 }
 
